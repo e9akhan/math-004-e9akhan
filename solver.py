@@ -1,4 +1,9 @@
+import time
+
 def solver(n, p=None, q=None):
+    if p>q:
+        return None
+        
     start = 10**(n-1)
     end = p or int('9'*n)
 
@@ -14,4 +19,4 @@ def solver(n, p=None, q=None):
     return "No palindrome found"
 
 if __name__ == '__main__':
-    print(f'solver(2, 1000) = {solver(2, 1000)}')
+    print(f'solver(2, 1000) = {solver(2, 90)}')
