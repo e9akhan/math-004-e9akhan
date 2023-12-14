@@ -1,5 +1,3 @@
-import time
-
 def solver(n, p=None, q=None):
     if p!=None and q!=None and p>q:
         return None
