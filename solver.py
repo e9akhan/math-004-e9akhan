@@ -11,12 +11,17 @@ def solver(n, p=None, q=None):
         start = p 
         end = q
 
+    palindrome = []
+
     for x in range(end, start-1, -1):
         for y in range(x, start-1, -1):
             value = x*y
             if str(value) == str(value)[::-1]:
-                return value
+                palindrome.append(value)
+
+    if palindrome:
+        return max(palindrome)
     return "No palindrome found"
 
 if __name__ == '__main__':
-    print(f'solver(2, 1000) = {solver(3, 1000, 100)}')
+    print(f'solver(2, 1000) = {solver(2, 1000)}')
