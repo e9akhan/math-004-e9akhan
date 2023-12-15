@@ -9,6 +9,9 @@ def solver(n, p=None, q=None):
         start = p 
         end = q
 
+    if start>end:
+        return None
+
     palindrome = []
 
     for x in range(end, start-1, -1):
