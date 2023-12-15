@@ -1,7 +1,4 @@
 def solver(n, p=None, q=None):
-    if p!=None and q!=None and p>q:
-        return None
-
     start = 10**(n-1)
     end = p or int('9'*n)
 
