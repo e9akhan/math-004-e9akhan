@@ -24,7 +24,7 @@ def solver(n, p=None, q=None):
         end = q
 
     if start > end:
-        return None
+        return -1
 
     palindrome = []
 
